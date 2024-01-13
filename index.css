@@ -347,7 +347,7 @@
   flex-direction: column;
   background-size: cover;
   justify-content: center;
-  background-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.09) 22.00%,rgba(255, 147, 0, 0.09) 39.00%,rgba(255, 147, 0, 0.8) 98.00%),url('https://github.com/VirusHQ/VirusHQ/raw/main/assets/0dc4434d-d8d3-4c27-8ae0-f600e9c4a17b.jpeg');
+  background-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.09) 22.00%,rgba(255, 147, 0, 0.09) 39.00%,rgba(255, 147, 0, 0.8) 98.00%),url('https://github.com/VirusHQ/Virus-HQ-HTML/raw/main/public/0dc4434d-d8d3-4c27-8ae0-f600e9c4a17b.jpeg');
   border-bottom-left-radius: 3vmin;
   border-bottom-right-radius: 3vmin;
 }
