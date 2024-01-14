@@ -5,32 +5,36 @@
   flex-direction: row;
 }
 .navigation-links-link {
-  font-size: 2.25vh;
+  font-size: 2.5vh;
   font-style: normal;
   text-align: center;
+  font-family: "Agdasima";
   font-weight: 600;
   text-decoration: none;
 }
 .navigation-links-link1 {
-  font-size: 2.25vh;
+  font-size: 2.5vh;
   font-style: normal;
   text-align: center;
+  font-family: "Agdasima";
   font-weight: 600;
   margin-left: var(--dl-space-space-twounits);
   text-decoration: none;
 }
 .navigation-links-link2 {
-  font-size: 2.25vh;
+  font-size: 2.5vh;
   font-style: normal;
   text-align: center;
+  font-family: "Agdasima";
   font-weight: 600;
   margin-left: var(--dl-space-space-twounits);
   text-decoration: none;
 }
 .navigation-links-link3 {
-  font-size: 2.25vh;
+  font-size: 2.5vh;
   font-style: normal;
   text-align: center;
+  font-family: "Agdasima";
   font-weight: 600;
   margin-left: var(--dl-space-space-twounits);
   text-decoration: none;

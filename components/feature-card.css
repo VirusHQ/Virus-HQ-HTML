@@ -24,13 +24,17 @@
   justify-content: flex-start;
 }
 .feature-card-text {
-  font-family: "Raleway";
+  font-size: 2.25em;
+  font-family: "Agdasima";
   font-weight: 600;
   line-height: 28px;
 }
 .feature-card-text1 {
   color: #3f3f3f;
-  font-size: 2.25vh;
+  font-size: 1.65rem;
+  font-style: normal;
+  font-family: "Agdasima";
+  font-weight: 500;
   line-height: 1.6;
 }
 @media(max-width: 767px) {

@@ -5,32 +5,36 @@
   flex-direction: row;
 }
 .navigation-links-link {
-  font-size: 2.25vh;
+  font-size: 2.5vh;
   font-style: normal;
   text-align: center;
+  font-family: "Agdasima";
   font-weight: 600;
   text-decoration: none;
 }
 .navigation-links-link1 {
-  font-size: 2.25vh;
+  font-size: 2.5vh;
   font-style: normal;
   text-align: center;
+  font-family: "Agdasima";
   font-weight: 600;
   margin-left: var(--dl-space-space-twounits);
   text-decoration: none;
 }
 .navigation-links-link2 {
-  font-size: 2.25vh;
+  font-size: 2.5vh;
   font-style: normal;
   text-align: center;
+  font-family: "Agdasima";
   font-weight: 600;
   margin-left: var(--dl-space-space-twounits);
   text-decoration: none;
 }
 .navigation-links-link3 {
-  font-size: 2.25vh;
+  font-size: 2.5vh;
   font-style: normal;
   text-align: center;
+  font-family: "Agdasima";
   font-weight: 600;
   margin-left: var(--dl-space-space-twounits);
   text-decoration: none;
@@ -66,6 +70,42 @@
   }
 }
 
+.stat-stat {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+.stat-text {
+  color: rgb(0, 0, 0);
+  font-size: 3.5rem;
+  font-style: normal;
+  font-family: "Agdasima";
+  font-weight: 700;
+}
+.stat-text1 {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  font-style: normal;
+  margin-top: var(--dl-space-space-halfunit);
+  text-align: center;
+  font-family: "Agdasima";
+  font-weight: 500;
+}
+
+
+
+@media(max-width: 991px) {
+  .stat-text {
+    text-align: center;
+  }
+}
+@media(max-width: 767px) {
+  .stat-text1 {
+    text-align: center;
+  }
+}
+
 .feature-card-feature-card {
   width: 100%;
   display: flex;
@@ -92,13 +132,17 @@
   justify-content: flex-start;
 }
 .feature-card-text {
-  font-family: "Raleway";
+  font-size: 2.25em;
+  font-family: "Agdasima";
   font-weight: 600;
   line-height: 28px;
 }
 .feature-card-text1 {
   color: #3f3f3f;
-  font-size: 2.25vh;
+  font-size: 1.65rem;
+  font-style: normal;
+  font-family: "Agdasima";
+  font-weight: 500;
   line-height: 1.6;
 }
 @media(max-width: 767px) {
@@ -126,18 +170,23 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 .gallery-card1-text {
+  font-size: 2.25em;
   align-self: flex-start;
   margin-top: var(--dl-space-space-halfunit);
+  font-family: "Agdasima";
   font-weight: 600;
   margin-bottom: var(--dl-space-space-halfunit);
 }
 .gallery-card1-text1 {
   color: var(--dl-color-gray-500);
+  font-size: 1.65em;
   align-self: flex-start;
+  font-family: "Agdasima";
 }
-
 
 
 @media(max-width: 767px) {
@@ -156,8 +205,8 @@
   padding: var(--dl-space-space-twounits);
   max-width: var(--dl-size-size-maxwidth);
   background: #fff;
-  box-shadow: 5px 5px 10px 0px rgba(18, 18, 18, 0.1);
   align-items: center;
+  border-radius: 1rem;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -173,17 +222,24 @@
 }
 .testimonial-card1-text {
   color: var(--dl-color-gray-500);
+  font-size: 1.65em;
   text-align: center;
+  font-family: "Agdasima";
   margin-bottom: var(--dl-space-space-threeunits);
 }
 .testimonial-card1-text1 {
-  font-size: 1.5rem;
-  font-weight: 300;
+  font-size: 1.85em;
+  font-style: normal;
+  font-family: "Agdasima";
+  font-weight: 600;
   margin-bottom: var(--dl-space-space-halfunit);
 }
 .testimonial-card1-text2 {
   color: var(--dl-color-gray-500);
-  font-weight: 600;
+  font-size: 1.4em;
+  font-style: normal;
+  font-family: "Agdasima";
+  font-weight: 300;
   margin-bottom: var(--dl-space-space-unit);
   text-transform: uppercase;
 }
@@ -353,7 +409,7 @@
 }
 .home-text {
   color: var(--dl-color-gray-black);
-  font-size: 4rem;
+  font-size: 5em;
   box-shadow: rgba(217, 217, 217, 0.5) 0px 0px 50px 50px;
   font-style: normal;
   text-align: center;
@@ -369,66 +425,6 @@
   grid-gap: var(--dl-space-space-twounits);
   max-width: var(--dl-size-size-maxwidth);
   grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.home-stat {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.home-text09 {
-  color: rgb(0, 0, 0);
-  font-size: 3.5rem;
-}
-.home-text10 {
-  color: rgb(0, 0, 0);
-  font-size: 1.5rem;
-  margin-top: var(--dl-space-space-halfunit);
-  text-align: center;
-}
-.home-stat1 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.home-text11 {
-  color: rgb(0, 0, 0);
-  font-size: 3.5rem;
-}
-.home-text14 {
-  color: #000000;
-  font-size: 1.5rem;
-  margin-top: var(--dl-space-space-halfunit);
-  text-align: center;
-}
-.home-stat2 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.home-text15 {
-  color: rgb(0, 0, 0);
-  font-size: 3.5rem;
-}
-.home-text18 {
-  color: rgb(0, 0, 0);
-  font-size: 1.5rem;
-  margin-top: var(--dl-space-space-halfunit);
-  text-align: center;
-}
-.home-stat3 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.home-text19 {
-  color: #000000;
-  font-size: 3.5rem;
-}
-.home-text21 {
-  color: #000000;
-  font-size: 1.5rem;
-  margin-top: var(--dl-space-space-halfunit);
-  text-align: center;
 }
 .home-features {
   flex: 0 0 auto;
@@ -469,14 +465,16 @@
   justify-content: flex-start;
 }
 .home-features-heading {
-  font-family: "Raleway";
+  font-size: 2.5em;
+  font-family: "Agdasima";
   line-height: 1.6;
   margin-bottom: var(--dl-space-space-oneandhalfunits);
 }
 .home-features-sub-heading {
   color: var(--dl-color-gray-800);
-  font-size: 2.5vh;
+  font-size: 1.75em;
   text-align: center;
+  font-family: "Agdasima";
   line-height: 1.6;
 }
 .home-container03 {
@@ -497,14 +495,18 @@
 .home-container04 {
   width: 100%;
   display: flex;
-  padding: var(--dl-space-space-threeunits);
   max-width: var(--dl-size-size-maxwidth);
   align-items: center;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
   flex-direction: column;
+  padding-bottom: var(--dl-space-space-threeunits);
   justify-content: center;
 }
 .home-features-heading1 {
-  font-family: "Raleway";
+  font-size: 2.5em;
+  font-family: "Agdasima";
   line-height: 1.6;
   margin-bottom: var(--dl-space-space-oneandhalfunits);
 }
@@ -512,7 +514,7 @@
   width: 100%;
   display: grid;
   grid-gap: var(--dl-space-space-twounits);
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr ;
 }
 .home-testimonial {
   width: 100%;
@@ -526,7 +528,7 @@
 .home-container06 {
   width: 100%;
   display: flex;
-  padding: var(--dl-space-space-threeunits);
+  padding: var(--dl-space-space-fourunits);
   max-width: var(--dl-size-size-maxwidth);
   align-items: center;
   flex-direction: column;
@@ -534,7 +536,8 @@
 }
 .home-features-heading2 {
   color: var(--dl-color-gray-white);
-  font-family: "Raleway";
+  font-size: 2.5em;
+  font-family: "Agdasima";
   line-height: 1.6;
   margin-bottom: var(--dl-space-space-oneandhalfunits);
 }
@@ -550,8 +553,8 @@
   max-width: var(--dl-size-size-maxwidth);
   align-items: center;
   padding-top: var(--dl-space-space-fourunits);
-  padding-left: var(--dl-space-space-threeunits);
-  padding-right: var(--dl-space-space-threeunits);
+  padding-left: var(--dl-space-space-sixunits);
+  padding-right: var(--dl-space-space-sixunits);
   flex-direction: column;
   padding-bottom: var(--dl-space-space-fourunits);
   justify-content: space-between;
@@ -566,14 +569,18 @@
 }
 .home-logo {
   color: var(--dl-color-gray-white);
-  font-size: 2.5rem;
+  font-size: 2.5em;
   font-weight: bold;
 }
 .home-features-sub-heading1 {
-  color: #2d2d2d;
-  font-size: 2.25vh;
+  color: var(--dl-color-gray-black);
+  font-size: 1.65em;
+  font-style: normal;
   text-align: center;
+  font-weight: 500;
   line-height: 1.6;
+  padding-left: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-twounits);
 }
 .home-separator {
   flex: 0 0 auto;
@@ -601,7 +608,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.home-text32 {
+.home-text19 {
   color: #ffffff;
   font-size: 1.5vh;
 }
@@ -617,18 +624,6 @@
     flex-direction: column;
   }
   .home-text {
-    text-align: center;
-  }
-  .home-text09 {
-    text-align: center;
-  }
-  .home-text11 {
-    text-align: center;
-  }
-  .home-text15 {
-    text-align: center;
-  }
-  .home-text19 {
     text-align: center;
   }
   .home-features-sub-heading {
@@ -650,12 +645,12 @@
     padding-left: var(--dl-space-space-threeunits);
     padding-right: var(--dl-space-space-threeunits);
   }
-  .home-text27 {
+  .home-text14 {
     text-align: center;
     padding-left: var(--dl-space-space-threeunits);
     padding-right: var(--dl-space-space-threeunits);
   }
-  .home-text28 {
+  .home-text15 {
     text-align: center;
     padding-left: var(--dl-space-space-threeunits);
     padding-right: var(--dl-space-space-threeunits);
@@ -682,18 +677,6 @@
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
     grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  .home-text10 {
-    text-align: center;
-  }
-  .home-text14 {
-    text-align: center;
-  }
-  .home-text18 {
-    text-align: center;
-  }
-  .home-text21 {
-    text-align: center;
   }
   .home-features1 {
     padding-left: var(--dl-space-space-twounits);
@@ -726,11 +709,11 @@
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
   }
-  .home-text27 {
+  .home-text14 {
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
   }
-  .home-text28 {
+  .home-text15 {
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
   }
@@ -745,7 +728,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  .home-text32 {
+  .home-text19 {
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
 }
@@ -806,7 +789,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  .home-text32 {
+  .home-text19 {
     text-align: center;
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }

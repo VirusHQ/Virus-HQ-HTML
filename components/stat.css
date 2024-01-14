@@ -1,0 +1,35 @@
+.stat-stat {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+.stat-text {
+  color: rgb(0, 0, 0);
+  font-size: 3.5rem;
+  font-style: normal;
+  font-family: "Agdasima";
+  font-weight: 700;
+}
+.stat-text1 {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  font-style: normal;
+  margin-top: var(--dl-space-space-halfunit);
+  text-align: center;
+  font-family: "Agdasima";
+  font-weight: 500;
+}
+
+
+
+@media(max-width: 991px) {
+  .stat-text {
+    text-align: center;
+  }
+}
+@media(max-width: 767px) {
+  .stat-text1 {
+    text-align: center;
+  }
+}
