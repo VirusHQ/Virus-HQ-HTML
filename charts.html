@@ -58,18 +58,6 @@
       rel="stylesheet"
       href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
     />
-    <style>
-      @keyframes fade-in-left {
-        0% {
-          opacity: 0;
-          transform: translateX(-20px);
-        }
-        100% {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
-    </style>
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
@@ -86,9 +74,23 @@
         </div>
       </div>
     </div>
-    <script
-      data-section-id="navbar"
-      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
-    ></script>
+    <script>
+      // Extract the short link from the URL
+      var shortLink = window.location.pathname.split('/').pop();
+      // Fetch the original URL from the backend
+      fetch('https://your-backend-url.com/redirect/' + encodeURIComponent(shortLink))
+          .then(response => {
+              if (response.ok) {
+                  // Redirect to the original URL
+                  window.location.href = response.url;
+              } else {
+                  // Handle case where the short link is not found
+                  document.body.innerHTML = "<h1>Shortened URL not found</h1>";
+              }
+          })
+          .catch(error => {
+              console.error('Error:', error);
+          });
+    </script>
   </body>
 </html>

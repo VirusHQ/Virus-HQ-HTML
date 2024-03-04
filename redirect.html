@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Virus HQ</title>
+    <title>redirect - Virus HQ</title>
+    <title>Redirecting...</title>
+    <meta property="og:title" content="redirect - Virus HQ" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -58,19 +62,36 @@
     />
   </head>
   <body>
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <div>
-      <link href="./question.css" rel="stylesheet" />
-      <div class="question-container">
-        <span class="question-text heading4">
-          <span>What types of cars do you sell?</span>
-        </span>
-        <span class="question-text1">
-          <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-            volutpat turpis. Mauris luctus rutrum mi ut rhoncus.
-          </span>
-        </span>
+      <link href="./redirect.css" rel="stylesheet" />
+
+      <div class="redirect-container">
+        <div>
+          <div class="redirect-container2">
+            <h1>Redirecting...</h1>
+
+            <script>
+              // Extract the short link from the URL
+              var shortLink = window.location.pathname.split('/').pop();
+
+              // Fetch the original URL from the backend
+              fetch('https://your-backend-url.com/redirect/' + encodeURIComponent(shortLink))
+                  .then(response => {
+                      if (response.ok) {
+                          // Redirect to the original URL
+                          window.location.href = response.url;
+                      } else {
+                          // Handle case where the short link is not found
+                          document.body.innerHTML = '<h1>Shortened URL not found</h1>';
+                      }
+                  })
+                  .catch(error => {
+                      console.error('Error:', error);
+                  });
+            </script>
+          </div>
+        </div>
       </div>
     </div>
     <script>
