@@ -15,7 +15,7 @@
 
         if (shortLink) {
             // Make a GET request to your backend API with the short URL
-            fetch('https://your-backend-url.com/redirect/' + encodeURIComponent(shortLink))
+            fetch('http://localhost:8080/expand?short_url=' + encodeURIComponent(shortLink))
                 .then(response => response.json())
                 .then(data => {
                     // Redirect to the URL received from the API
